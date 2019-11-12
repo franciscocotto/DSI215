@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="php">
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/servlets/formMembresia.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/servlets/membresias.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/tableMembresias.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/modelo/Membresias.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/tableClientes.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/conexion/ConexionJDBC.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/alert.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/js/scripts.js</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/addMembresia.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/AddMembresias.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/membresias.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/modelo/addMembresias.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/modelo/addClientes.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/addClientes.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/index.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/footer.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/error.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/servlets/deleteMembresia.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/modelo/Cliente.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/servlets/formEditClientes.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/readMembresia.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/Clientes.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/showError.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/deleteMembresia.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/web/WEB-INF/readClientes.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/servlets/formEditaMembresia.java</file>
+        </group>
+        <group>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/java/servlets/formClientes.java</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/WEB-INF/readClientes.jsp</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/WEB-INF/addClientes.jsp</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/java/servlets/formMembresia.java</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/WEB-INF/tableClientes.jsp</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/conf/MANIFEST.MF</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/css/login.css</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/java/modelo/Cliente.java</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/java/servlets/formEditClientes.java</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/WEB-INF/Clientes.jsp</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/java/modelo/addClientes.java</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/login.jsp</file>
+            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/index.jsp</file>
+        </group>
+    </open-files>
+</project-private>

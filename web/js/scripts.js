@@ -1,0 +1,17 @@
+document.write('<script type="text/javascript" src="js/jquery-1.12.3.js"></script>');
+document.write('<script type="text/javascript" src="js/bootstrap.js"></script>');
+document.write('<script type="text/javascript" src="js/jquery.dataTables.js"></script>');
+document.write('<script type="text/javascript" src="js/dataTables.bootstrap.js"></script>');
+document.write('<script type="text/javascript" src="js/jquery-ui.js"></script>');
+document.write('<script type="text/javascript" src="js/jquery.mask.min.js"></script>');
+document.write('<script type="text/javascript" src="js/jquery.maskMoney.js"></script>');
+document.write('<script type="text/javascript" src="js/bootstrap-dialog.js"></script>');
+document.write('<script type="text/javascript" src="js/jquery.validate.js"></script>');
+document.write('<script type="text/javascript" src="js/formvalidate.js"></script>');
+document.write('<script type="text/javascript" src="js/waitingfor.js"></script>');
+document.write('<script type="text/javascript" src="js/bootstrap-dialog.js"></script>');
+document.write('<script type="text/javascript" src="js/moment.js"></script>');
+document.write('<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>');
+document.write('<script type="text/javascript" src="js/initTable.js"></script>');
+document.write('<script type="text/javascript" src="js/validaciones.js"></script>');
+document.write('<script type="text/javascript" src="js/jquery.checkall.js"></script>');
