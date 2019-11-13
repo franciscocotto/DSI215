@@ -33,17 +33,18 @@
                 </div>
             </div>
             <div class="wrap">
-                <form id="loginform" class="login" action="" method="">
+                <form id="loginform" class="login" action="LoginServlet" method="post">
                     <label>Usuario:</label>
                 <input type="text" placeholder="Usuario" name="username" required maxlength="60" minlength="3"/>
                  <label>Contraseña:</label>
                 <input type="password" name="password" placeholder="Contraseña" required maxlength="60" minlength="3"/>
-                <input type="submit" id="ingress" value="Ingresar" class="btn btn-success btn-sm" onclick="location.href='index.jsp';" />
+                <input type="submit" id="ingress" value="Ingresar" class="btn btn-success btn-sm"/>
                 <div class="remember-forgot">
-                    <div class="row col-lg-12">
-                            <a href="#" class="forgot-pass">Olvid&eacute; la Contraseña</a>
-                    </div>
+
+                         <label style="color:red; text-align: center; font-weight: bold"><%=(request.getAttribute("errMessage") == null) ? "" : request.getAttribute("errMessage")%></label>
+                           <!-- <a href="#" class="forgot-pass">Olvid&eacute; la Contraseña</a>-->
                 </div>
+               
                 </form>
             </div>
         </div>

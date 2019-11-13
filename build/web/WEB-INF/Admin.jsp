@@ -36,6 +36,9 @@
                          <li>
                         <a href="membresias.jsp"><i class="fa fa-fw fa-cog"></i> Membresias</a>
                         </li>
+                         <li>
+                          <a href="servicios.jsp"><i class="fa fa-fw fa-cog"></i> Servicios Básicos</a>
+                        </li>
                     </ul>
                 </div>
             </nav>

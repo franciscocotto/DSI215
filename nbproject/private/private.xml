@@ -33,21 +33,14 @@
             <file>file:/C:/Users/Moi/Documents/NetBeansProjects/gimnasio/src/java/servlets/formEditaMembresia.java</file>
         </group>
         <group>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/java/servlets/formClientes.java</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/WEB-INF/readClientes.jsp</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/WEB-INF/addClientes.jsp</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/java/servlets/formMembresia.java</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/WEB-INF/tableClientes.jsp</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/conf/MANIFEST.MF</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/css/login.css</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/java/modelo/Cliente.java</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/java/servlets/formEditClientes.java</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/WEB-INF/Clientes.jsp</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/src/java/modelo/addClientes.java</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/login.jsp</file>
-            <file>file:/C:/Users/Angel/Documents/RECOVER/DOCUMENTOS/NetBeansProjects/gimnasio/web/index.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/web.xml</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/login.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/LoginServlet.java</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/index.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/login/dao/LoginDao.java</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/Clientes.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/addClientes.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/conexion/DBConnection.java</file>
         </group>
     </open-files>
 </project-private>

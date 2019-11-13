@@ -18,6 +18,12 @@
    
     </head> 
     <body>
+<% //In case, if User session is not set, redirect to Login page.
+if((request.getSession(false).getAttribute("User")== null) )
+{
+%>
+<jsp:forward page="/JSP/Login.jsp"></jsp:forward>
+<%} %>
         <!--include que muestra los datos de los clientes-->
        <jsp:include page="WEB-INF/Clientes.jsp" />
 <!--       llama todos los script-->        
