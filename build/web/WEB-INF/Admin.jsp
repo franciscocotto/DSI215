@@ -15,7 +15,7 @@
                 </div>
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>&nbsp;<%=request.getAttribute("userName")%><b class="caret"></b></a>
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>&nbsp;<%=request.getAttribute("userName")%><b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="<%=request.getContextPath()%>/LogoutServlet"><i class="fa fa-fw fa-power-off"></i>Cerrar Sesi&oacute;n</a>
@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav side-nav">
                         <li class="active">
-                            <a href="#">
+                            <a href="LoginServlet">
                                 <i class="fa fa-fw fa-pie-chart"></i> Clientes                    
                                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle  extended">                    
                                 <polygon style="border-color: white;" points="22,20 -5,40 0,0"></polygon>
@@ -34,7 +34,7 @@
                             </a>
                         </li> 
                          <li>
-                        <a href="membresias.jsp"><i class="fa fa-fw fa-cog"></i> Membresias</a>
+                        <a href="membresia"><i class="fa fa-fw fa-cog"></i> Membresias</a>
                         </li>
                          <li>
                           <a href="servicios.jsp"><i class="fa fa-fw fa-cog"></i> Servicios Básicos</a>

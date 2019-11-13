@@ -21,12 +21,12 @@ import javax.servlet.http.HttpServletResponse;
  */
 
 //metodo para crear la ruta de membresias
-@WebServlet(name="linkjsp" , urlPatterns = {"/linkjsp"})
+@WebServlet(name="membresia" , urlPatterns = {"/membresia"})
 public class membresias extends HttpServlet {
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher dispatcher = getServletContext()
-                .getRequestDispatcher("/WEB-INF/Membresias.jsp");
+                .getRequestDispatcher("/membresias.jsp");
         dispatcher.forward(request, response);
     }
 

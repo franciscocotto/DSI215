@@ -34,7 +34,7 @@
                             </a>
                         </li> 
                          <li>
-                        <a href="membresias.jsp"><i class="fa fa-fw fa-cog"></i> Membresias</a>
+                        <a href="linkjsp"><i class="fa fa-fw fa-cog"></i> Memsbresias</a>
                         </li>
                     </ul>
                 </div>
