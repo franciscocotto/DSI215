@@ -17,12 +17,11 @@
         <link href="css/sb-admin.css" rel="stylesheet">
     </head> 
     <body>
-       <% //In case, if Admin session is not set, redirect to Login page
-        if((request.getSession(false).getAttribute("Admin")== null) )
-        {
+         <% // Para fijar una variable en un jsp
+           application.getAttribute("admin"); 
+             // Para leerla en otro o el mismo JSP
+                Integer valor = (Integer)application.getAttribute("admin");
         %>
-        <jsp:forward page="login.jsp"></jsp:forward>
-        <%} %>
         <!--include que muestra los datos de las membresias-->
        <jsp:include page="WEB-INF/AddMembresias.jsp" />
         <!--llama todos los script-->

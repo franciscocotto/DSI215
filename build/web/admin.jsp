@@ -18,12 +18,12 @@
    
     </head> 
     <body>
-        <% //In case, if Admin session is not set, redirect to Login page
-        if((request.getSession(false).getAttribute("Admin")== null) )
-        {
+        <% // Para fijar una variable en un jsp
+            application.setAttribute("admin", new Integer(1));
+
+             // Para leerla en otro o el mismo JSP
+                Integer valor = (Integer)application.getAttribute("admin");
         %>
-        <jsp:forward page="/JSP/Login.jsp"></jsp:forward>
-        <%} %>
         <!--include que muestra los datos de los clientes-->
        <jsp:include page="WEB-INF/Admin.jsp" />
 <!--       llama todos los script-->        

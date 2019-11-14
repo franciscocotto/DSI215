@@ -65,7 +65,7 @@ public class formClientes extends HttpServlet {
             //creando objeto para guardar cliente
             modelo.addClientes nuevoCliente = new modelo.addClientes();
             nuevoCliente.agrega(cliente);
-            response.sendRedirect("index.jsp");//si se guarda exitosamente se redirecciona a membresia
+            response.sendRedirect("LoginServlet");//si se guarda exitosamente se redirecciona a membresia
     }
 
 

@@ -25,41 +25,14 @@ public class LoginServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request,
          HttpServletResponse response) throws ServletException, IOException {
-        String userName = request.getParameter("userName");
-        LoginBean loginBean = new LoginBean();
-        loginBean.setUserName(userName);
-        LoginDao loginDao = new LoginDao();
-        try {
-            String userValidate = loginDao.authenticateUser(loginBean);
-            if (userValidate.equals("null")) {
-                System.out.println("Admin's Home");
-                HttpSession session = request.getSession(); //Creating a session
-                session.setAttribute("Admin", userName); //setting session attribute
-                request.setAttribute("userName", userName);
-                request.getRequestDispatcher("admin.jsp").forward(request, response);
-            } else if (userValidate.equals("Editor_Role")) {
-                System.out.println("Editor's Home");
-                HttpSession session = request.getSession();
-                session.setAttribute("Editor", userName);
-                request.setAttribute("userName", userName);
-                request.getRequestDispatcher("editor.jsp").forward(request, response);
-            } else if (userValidate.equals("User_Role")) {
-                System.out.println("User's Home");
-                HttpSession session = request.getSession();
-                session.setMaxInactiveInterval(10 * 60);
-                session.setAttribute("User", userName);
-                request.setAttribute("userName", userName);
-                request.getRequestDispatcher("user.jsp").forward(request, response);
-            } else {
-                System.out.println("Error message = " + userValidate);
-                request.setAttribute("errMessage", userValidate);
-                request.getRequestDispatcher("login.jsp").forward(request, response);
-            }
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        } catch (Exception e2) {
-            e2.printStackTrace();
-        }
+         Integer valor = (Integer)getServletContext().getAttribute("admin");
+   if( valor == 1){
+          RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/admin.jsp");
+          dispatcher.forward(request, response);
+   }else{
+         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/user.jsp");
+          dispatcher.forward(request, response);
+   }
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -54,7 +54,7 @@ public class formEditaMembresia extends HttpServlet {
             modelo.addMembresias nuevaMembresia = new modelo.addMembresias();
             nuevaMembresia.edita(membresia);
 //            si se guarda exitosamente se redirecciona a membresia
-            response.sendRedirect("membresias.jsp");
+            response.sendRedirect("membresias");
     }
 
     @Override

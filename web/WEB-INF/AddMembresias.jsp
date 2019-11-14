@@ -14,7 +14,17 @@
                 </div>
           <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>&nbsp;<%=request.getAttribute("userName")%><b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>&nbsp;Bienvenido(a):
+                          <% 
+                        Integer valor = (Integer)getServletContext().getAttribute("admin");
+                         if( valor == 1){
+                        %> 
+                        Administrador
+                       <%} else{
+                        %> 
+                        Empleado
+                       <%} %>
+                        <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="<%=request.getContextPath()%>/LogoutServlet"><i class="fa fa-fw fa-power-off"></i>Cerrar Sesi&oacute;n</a>
@@ -36,7 +46,31 @@
                                 <polygon style="border-color: white;" points="22,20 -5,40 0,0"></polygon>
                                 </svg>
                         </a>
-                        </li>            
+                        </li>
+                        <% 
+                         if( valor == 1){
+                        %>  
+                        <li>
+                          <a href="empleado"><i class="fa fa-fw fa-user-md"></i> Empleados</a>
+                        </li>
+                        <li>
+                          <a href="inventario"><i class="fa fa-fw fa-book"></i> Inventario</a>
+                        </li>
+                        <li>
+                          <a href="servicios"><i class="fa fa-fw fa-bell"></i> Servicios Básicos</a>
+                        </li>
+                         <li>
+                          <a href="cuentas"><i class="fa fa-fw fa-money"></i> Cuentas por Pagar</a>
+                        </li>
+                         <li>
+                          <a href="capital"><i class="fa fa-fw fa-bank"></i> Capital</a>
+                        </li>
+                         <li>
+                          <a href="balance"><i class="fa fa-fw fa-pie-chart"></i>  Balance</a>
+                        </li>
+                        <%}
+                        %> 
+                        
                     </ul>
                 </div>
             </nav>

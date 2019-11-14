@@ -73,7 +73,7 @@ public class formEditClientes extends HttpServlet {
             //coneccion a la base de datos
             ConexionJDBC con = new ConexionJDBC();
             Connection  cn = con.conectar();  
-            response.sendRedirect("index.jsp");//si se edita exitosamente se redirecciona a index
+            response.sendRedirect("LoginServlet");//si se edita exitosamente se redirecciona a index
     }
     }
 

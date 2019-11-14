@@ -25,6 +25,7 @@ import javax.servlet.http.HttpServletResponse;
 public class membresias extends HttpServlet {
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException {
+        Integer valor = (Integer)request.getAttribute("admin");
         RequestDispatcher dispatcher = getServletContext()
                 .getRequestDispatcher("/membresias.jsp");
         dispatcher.forward(request, response);
