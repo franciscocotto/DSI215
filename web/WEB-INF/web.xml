@@ -37,5 +37,25 @@
 <servlet-name>membresias</servlet-name>
 <url-pattern>/membresias</url-pattern>
 </servlet-mapping>
+<servlet>
+<description></description>
+<display-name>empleados</display-name>
+<servlet-name>empleados</servlet-name>
+<servlet-class>servlets.empleados</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>empleados</servlet-name>
+<url-pattern>/empleados</url-pattern>
+</servlet-mapping>
+<servlet>
+<description></description>
+<display-name>compras</display-name>
+<servlet-name>compras</servlet-name>
+<servlet-class>servlets.compras</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>compras</servlet-name>
+<url-pattern>/compras</url-pattern>
+</servlet-mapping>
 </web-app>
 

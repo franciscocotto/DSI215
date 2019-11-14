@@ -6,7 +6,7 @@
 <!--preparando conexion a base de datos en jsp-->
 <%conexion.ConexionJDBC con = new conexion.ConexionJDBC();
           Connection  cn2 = con.conectar();//se conecto a la base de datos
-            String sql2="select * from public.membresia ORDER BY id_membresia;";     
+            String sql2="select * from public.empleados ORDER BY id_campo;";     
             Statement st2;//preparando envio de consulta select
             
                 try {
@@ -16,11 +16,20 @@
     <thead>
         <tr>
             <th>N°</th>
-            <th>Nombre Membresia</th>
-            <th>ID_membresia</th>
-            <th>Descripci&oacute;n</th>
-            <th>Costo</th>
-            <th>Beneficios</th>
+            <th>Nombre Empleado</th>
+            <th>ID_empleado</th>
+            <th>Apellido Empleado</th>
+            <th>Direcci&oacute;n</th>
+            <th>Tel&eacute;fono</th>
+            <th>DUI</th>
+             <th>NIT</th>
+             <th>NIP</th>
+             <th>ISSS</th>
+             <th>Salario</th>
+             <th>Usuario</th>
+             <th>Password</th>
+             <th>Email</th>
+             <th>Rol</th>
             <th>Ver</th>
             <th>Eliminar</th>             
         </tr>
@@ -30,11 +39,20 @@
           <%while(r.next()){%> 
         <tr>
             <td></td>
-            <td class="nombre"><%out.println(r.getString("nombremembresia"));%></td>
-            <td class="codigo"><%out.println(r.getString("id_membresia"));%></td>
-            <td class="descripcion"><%out.println(r.getString("descripcion"));%></td>
-            <td class="costo">$<%out.println(r.getString("costo"));%></td>
-            <td class="beneficios"><%out.println(r.getString("beneficios"));%></td>
+            <td class="nombre"><%out.println(r.getString("nombre"));%></td>
+            <td class="codigo"><%out.println(r.getString("id_campo"));%></td>
+            <td class="apellido"><%out.println(r.getString("apellido"));%></td>
+            <td class="direccion"><%out.println(r.getString("direccion"));%></td>
+            <td class="telefono"><%out.println(r.getString("telefono"));%></td>
+            <td class="dui"><%out.println(r.getString("dui"));%></td>
+            <td class="nit"><%out.println(r.getString("nit"));%></td>
+            <td class="nip"><%out.println(r.getString("nip"));%></td>
+            <td class="isss"><%out.println(r.getString("isss"));%></td>
+             <td class="salario">$<%out.println(r.getString("salario"));%></td>
+              <td class="user"><%out.println(r.getString("username"));%></td>
+               <td class="password"><%out.println(r.getString("password"));%></td>
+               <td class="email"><%out.println(r.getString("email"));%></td>
+                <td class="role"><%out.println(r.getString("role"));%></td>
             <td>
                 <!--para edita-->
                 <a class="center btn btn-default edit" >

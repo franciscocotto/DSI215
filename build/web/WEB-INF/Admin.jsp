@@ -47,10 +47,10 @@
                         <a href="membresia"><i class="fa fa-fw fa-cog"></i> Membresias</a>
                         </li>
                         <li>
-                          <a href="empleado"><i class="fa fa-fw fa-user-md"></i> Empleados</a>
+                          <a href="empleados"><i class="fa fa-fw fa-user-md"></i> Empleados</a>
                         </li>
                         <li>
-                          <a href="inventario"><i class="fa fa-fw fa-book"></i> Inventario</a>
+                          <a href="compras"><i class="fa fa-fw fa-book"></i> Compras</a>
                         </li>
                         <li>
                           <a href="servicios"><i class="fa fa-fw fa-bell"></i> Servicios Básicos</a>

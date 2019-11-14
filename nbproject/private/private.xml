@@ -3,13 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="php">
-            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/WEB-INF/tableMembresias.jsp</file>
             <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/WEB-INF/Clientes.jsp</file>
-            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/WEB-INF/addMembresia.jsp</file>
-            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/index.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/src/java/servlets/LoginServlet.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/user.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/src/java/servlets/membresias.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/admin.jsp</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/login.jsp</file>
             <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/src/java/conexion/ConexionJDBC.java</file>
+            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/WEB-INF/Admin.jsp</file>
             <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/WEB-INF/AddMembresias.jsp</file>
-            <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/src/java/login/bean/NewClass.java</file>
         </group>
         <group>
             <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/LoginServlet.java</file>

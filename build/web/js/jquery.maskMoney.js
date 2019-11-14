@@ -21,7 +21,7 @@
                 prefix: "",
                 suffix: "",
                 affixesStay: true,
-                thousands: ",",
+                thousands: "",
                 decimal: ".",
                 precision: 2,
                 allowZero: false,
@@ -82,7 +82,7 @@
             return this.map(function () {
                 var value = ($(this).val() || "0"),
 					settings = $(this).data("settings") || defaultOptions,
-					regExp = new RegExp((settings.thousandsForUnmasked || settings.thousands), "g");
+				//	regExp = new RegExp((settings.thousandsForUnmasked || settings.thousands), "g");
                 value = value.replace(regExp, "");
                 return parseFloat(value);
             });

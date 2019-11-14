@@ -22,7 +22,7 @@ try
 
 con = DBConnection.createConnection();
 statement = con.createStatement();
-resultSet = statement.executeQuery("select username,password,role from users");
+resultSet = statement.executeQuery("select username,password,role from empleados");
 while(resultSet.next())
 {
 userNameDB = resultSet.getString("username");

@@ -11,8 +11,7 @@
             
                 try {
                    st2 = cn2.createStatement();
-                   ResultSet r=st2.executeQuery(sql2);//resultset %>
-                   <div>                 
+                   ResultSet r=st2.executeQuery(sql2);//resultset %>               
 <table id="example" class="table tabler hover link table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
     <thead>
         <tr>
