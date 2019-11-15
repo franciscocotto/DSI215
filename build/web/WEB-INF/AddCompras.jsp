@@ -51,9 +51,9 @@
                           <a href="empleados"><i class="fa fa-fw fa-user-md"></i> Empleados
                           </a>
                         </li>
-                        <li class="active">
-                          <a href="compras"><i class="fa fa-fw fa-book"></i> Compras
-                           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle  extended">                    
+                        <li  class="active">
+                          <a href="compras"><i class="fa fa-fw fa-book"></i> Compras  
+                               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle  extended">                    
                                 <polygon style="border-color: white;" points="22,20 -5,40 0,0"></polygon>
                                 </svg>
                           </a>
@@ -62,7 +62,8 @@
                           <a href="servicios"><i class="fa fa-fw fa-bell"></i> Servicios Básicos</a>
                         </li>
                          <li>
-                          <a href="cuentas"><i class="fa fa-fw fa-money"></i> Cuentas por Pagar</a>
+                          <a href="deudas"><i class="fa fa-fw fa-money"></i> Cuentas por Pagar
+                          </a>
                         </li>
                          <li>
                           <a href="capital"><i class="fa fa-fw fa-bank"></i> Capital</a>
@@ -78,6 +79,69 @@
             </nav>
             <div id="page-wrapper">
                 <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading h145">
+                                <div class="row vertical">
+                                    <div class="col-xs-5">
+                                        <i class="fa fa-users fa-4x"></i>
+                                    </div>
+                                    <div class="col-xs-7 bleft">
+                                        <div class="huge">956</div>
+                                        <div>Total de Usuarios</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                  </div>
+                    </div>
+
+ <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading h145">
+                                <div class="row vertical">
+                                    <div class="col-xs-5">
+                                        <i class="fa fa-mobile fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-7 bleft">
+                                        <div class="huge">1205</div>
+                                        <div>Total de Sesiones</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                  </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading h145">
+                                <div class="row vertical">
+                                    <div class="col-xs-5">
+                                        <i class="fa fa-home fa-4x"></i>
+                                    </div>
+                                    <div class="col-xs-7 bleft">
+                                        <div class="huge">1501</div>
+                                        <div>Total de Visitas</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                  </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading h145">
+                                <div class="row vertical">
+                                    <div class="col-xs-5">
+                                        <i class="fa fa-clock-o fa-4x"></i>
+                                    </div>
+                                    <div class="col-xs-7 bleft">
+                                        <div class="huge">1021</div>
+                                        <div>Minutos de Sesión</div>
+                                    </div>
+                                </div>
+                            </div>
+                                                  </div>
+                    </div>
+                </div>
                     <div class="row">
                         <div class="col-lg-9">
                             <h1 class="page-header" style="margin-top:0;">

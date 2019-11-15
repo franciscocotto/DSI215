@@ -21,7 +21,7 @@
             <th>ID_Compra</th>
             <th>Descripci&oacute;n</th>
             <th>Cantidad</th>
-            <th>Precio</th>
+            <th>Total Compra</th>
             <th>Forma de Pago</th>
             <th>Ver</th>
             <th>Eliminar</th>             

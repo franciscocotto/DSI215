@@ -51,18 +51,18 @@
                           <a href="empleados"><i class="fa fa-fw fa-user-md"></i> Empleados
                           </a>
                         </li>
-                        <li  class="active">
-                          <a href="compras"><i class="fa fa-fw fa-book"></i> Compras  
-                               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle  extended">                    
-                                <polygon style="border-color: white;" points="22,20 -5,40 0,0"></polygon>
-                                </svg>
+                        <li>
+                          <a href="compras"><i class="fa fa-fw fa-book"></i> Compras                       
                           </a>
                         </li>
                         <li>
                           <a href="servicios"><i class="fa fa-fw fa-bell"></i> Servicios Básicos</a>
                         </li>
-                         <li>
+                         <li class="active">
                           <a href="deudas"><i class="fa fa-fw fa-money"></i> Cuentas por Pagar
+                           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle  extended">                    
+                                <polygon style="border-color: white;" points="22,20 -5,40 0,0"></polygon>
+                                </svg>
                           </a>
                         </li>
                          <li>
@@ -80,80 +80,17 @@
             <div id="page-wrapper">
                 <div class="container-fluid">
                     <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading h145">
-                                <div class="row vertical">
-                                    <div class="col-xs-5">
-                                        <i class="fa fa-users fa-4x"></i>
-                                    </div>
-                                    <div class="col-xs-7 bleft">
-                                        <div class="huge">956</div>
-                                        <div>Total de Usuarios</div>
-                                    </div>
-                                </div>
-                            </div>
-                                                  </div>
-                    </div>
-
- <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-red">
-                            <div class="panel-heading h145">
-                                <div class="row vertical">
-                                    <div class="col-xs-5">
-                                        <i class="fa fa-mobile fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-7 bleft">
-                                        <div class="huge">1205</div>
-                                        <div>Total de Sesiones</div>
-                                    </div>
-                                </div>
-                            </div>
-                                                  </div>
-                    </div>
-                     <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-green">
-                            <div class="panel-heading h145">
-                                <div class="row vertical">
-                                    <div class="col-xs-5">
-                                        <i class="fa fa-home fa-4x"></i>
-                                    </div>
-                                    <div class="col-xs-7 bleft">
-                                        <div class="huge">1501</div>
-                                        <div>Total de Visitas</div>
-                                    </div>
-                                </div>
-                            </div>
-                                                  </div>
-                    </div>
-                     <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading h145">
-                                <div class="row vertical">
-                                    <div class="col-xs-5">
-                                        <i class="fa fa-clock-o fa-4x"></i>
-                                    </div>
-                                    <div class="col-xs-7 bleft">
-                                        <div class="huge">1021</div>
-                                        <div>Minutos de Sesión</div>
-                                    </div>
-                                </div>
-                            </div>
-                                                  </div>
-                    </div>
-                </div>
-                    <div class="row">
                         <div class="col-lg-9">
                             <h1 class="page-header" style="margin-top:0;">
-                                <i class="fa pg fa-fw fa-book"></i> Administraci&oacute;n de Compras
+                                <i class="fa pg fa-fw fa-money"></i> Administraci&oacute;n de Cuentas por Pagar
                             </h1>
                         </div>
 
                         <div class="col-lg-3">
-                          <button type="button" id="save-notify" name="regresar" class="col-lg-12 t5 btn-left btn btn-default" data-target="#agregarcompra" data-toggle="modal">
+<!--                          <button type="button" id="save-notify" name="regresar" class="col-lg-12 t5 btn-left btn btn-default" data-target="#agregarcompra" data-toggle="modal">
                                 <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
                                 Agregar Compra
-                            </button>
+                            </button>-->
                         </div>
                     </div>
                     <div id="page-wrapper">
@@ -161,7 +98,7 @@
 
                             <div class="row gray-row">
                                 <article class="center2" >
-                                     <jsp:include page="tableCompras.jsp" /> 
+                                     <jsp:include page="tableDeudas.jsp" /> 
                                 </article>
                             </div>
                         </div>
@@ -171,9 +108,7 @@
             </div>
         </div>
 <!-- Modals -->
- <jsp:include page="deleteCompra.jsp" />
- <jsp:include page="addCompra.jsp" />
- <jsp:include page="readCompra.jsp" />
+ <jsp:include page="readDeuda.jsp" />
     </body>
 
 </html>

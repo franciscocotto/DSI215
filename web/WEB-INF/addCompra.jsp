@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="form-group numero">
-                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Precio:</label>
+                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Total Compra:</label>
                         <div class="col-md-8"> 
                             <div class="input-group">
                               <span class="input-group-addon">$</span>

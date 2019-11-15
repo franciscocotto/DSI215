@@ -57,5 +57,15 @@
 <servlet-name>compras</servlet-name>
 <url-pattern>/compras</url-pattern>
 </servlet-mapping>
+<servlet>
+<description></description>
+<display-name>deudas</display-name>
+<servlet-name>deudas</servlet-name>
+<servlet-class>servlets.deudas</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>deudas</servlet-name>
+<url-pattern>/deudas</url-pattern>
+</servlet-mapping>
 </web-app>
 

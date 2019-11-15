@@ -7,7 +7,7 @@
 <!--preparando conexion a base de datos en jsp-->
 <%conexion.ConexionJDBC con = new conexion.ConexionJDBC();
           Connection  cn2 = con.conectar();//se conecto a la base de datos
-            String sql2="select * from public.compras ORDER BY id_compras;";     
+            String sql2="select * from public.compras  WHERE forma_de_pago='2' ORDER BY id_compras;";     
             Statement st2;//preparando envio de consulta select
             
                 try {
@@ -21,10 +21,10 @@
             <th>ID_Compra</th>
             <th>Descripci&oacute;n</th>
             <th>Cantidad</th>
-            <th>Total Compra</th>
-            <th>Forma de Pago</th>
-            <th>Ver</th>
-            <th>Eliminar</th>             
+            <th>Deuda</th>
+            <th>Abonos</th>
+            <th>Total Deuda</th>
+            <th>Ver</th>         
         </tr>
     </thead>
     <tbody>
@@ -37,17 +37,12 @@
             <td class="descripcion"><%out.println(r.getString("descripcion"));%></td>
             <td class="cantidad"><%out.println(r.getString("cantidad"));%></td>
             <td class="precio">$<%out.println(r.getString("precio"));%></td>
-            <td class="pago"><%out.println(r.getString("forma_de_pago"));%></td>
+             <td class="abono">$<%out.println(r.getString("abono"));%></td>
+            <td class="total_deuda">$<%out.println(r.getString("total_deuda"));%></td>
             <td>
                 <!--para edita-->
                 <a class="center btn btn-default edit">
                     <span class="glyphicon glyphicon-pencil"></span>                  
-                </a>
-            </td>
-            <td>
-                <!--para eliminar-->
-                <a class="center btn btn-default delete">
-                   <span class="glyphicon glyphicon-trash"> </span>                 
                 </a>
             </td>
 
