@@ -58,12 +58,20 @@
                                 </svg>
                           </a>
                         </li>
-                        <li>
-                          <a href="servicios"><i class="fa fa-fw fa-bell"></i> Servicios Básicos</a>
-                        </li>
                          <li>
                           <a href="deudas"><i class="fa fa-fw fa-money"></i> Cuentas por Pagar
                           </a>
+                        </li>
+                          <li>
+                          <a href="ventas"><i class="fa fa-fw fa-calculator"></i> Ventas
+                          </a>
+                        </li>
+                        <li>
+                          <a href="cobros"><i class="fa fa-fw fa-check"></i> Cuentas por Cobrar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="servicios"><i class="fa fa-fw fa-bell"></i> Servicios Básicos</a>
                         </li>
                          <li>
                           <a href="capital"><i class="fa fa-fw fa-bank"></i> Capital</a>

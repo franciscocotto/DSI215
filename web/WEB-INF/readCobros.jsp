@@ -1,18 +1,18 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!-- Modal Desvincular -->
-<div class="modal fade resette" id="readdeuda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade resette" id="readcobro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-                 <form id="agregaruser" action="formDeuda" method="post" class="resetform form-horizontal">
+                 <form id="agregaruser" action="formCobro" method="post" class="resetform form-horizontal">
                         <div class="modal-header">
                 <div class="col-md-6">
                 <h4 class="page-alerth" style="margin-top:0;">
-                    <i class="fa pg2 fa-fw fa-money"></i> Abonar a Deuda
+                    <i class="fa pg2 fa-fw fa-check"></i> Cobrar Deuda
                 </h4>
                 </div>
                 <div class="col-md-5">
                   <div class="form-group">
-                        <label class="col-md-6 control-label">ID Deuda</label>
+                        <label class="col-md-6 control-label">ID Cobro</label>
                         <div class="col-md-6">
                             <input class="form-control addcodigo" type="text" name="codigo" readonly />    
                         </div>
@@ -51,7 +51,7 @@
                         </div>
                     </div>  
                       <div class="form-group numero">
-                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Abono Anterior:</label>
+                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Cobro Anterior:</label>
                         <div class="col-md-8"> 
                             <div class="input-group">
                               <span class="input-group-addon">$</span>
@@ -60,7 +60,7 @@
                         </div>
                     </div>   
                     <div class="form-group numero">
-                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Agregar Nuevo Abono:</label>
+                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Agregar Nuevo Cobro:</label>
                         <div class="col-md-8"> 
                             <div class="input-group">
                               <span class="input-group-addon">$</span>

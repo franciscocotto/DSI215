@@ -7,7 +7,7 @@
                         <div class="modal-header">
                 <div class="col-md-6">
                 <h4 class="page-alerth" style="margin-top:0;">
-                    <i class="fa pg2 fa-fw fa-book"></i> Abonar a Deuda
+                    <i class="fa pg2 fa-fw fa-money"></i> Abonar a Deuda
                 </h4>
                 </div>
                 <div class="col-md-5">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="form-group letra">
-                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Descripc&oacute;n:</label>
+                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Descripci&oacute;n:</label>
                         <div class="col-md-8">
                             <input  class="form-control adddescripcion" row="10"  cols="30"  placeholder="Ingresar descripc&oacute;n"  maxlength="60" minlength="3" readonly/>  
                         </div>

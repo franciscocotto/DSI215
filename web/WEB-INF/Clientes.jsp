@@ -46,6 +46,10 @@
                          <li>
                         <a href="membresia"><i class="fa fa-fw fa-cog"></i> Membresias</a>
                         </li>
+                          <li>
+                          <a href="ventas"><i class="fa fa-fw fa-calculator"></i> Ventas
+                          </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

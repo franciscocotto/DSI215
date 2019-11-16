@@ -1,15 +1,15 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!-- Modal Desvincular -->
-<div class="modal fade resette" id="agregarcompra" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade resette" id="agregarventa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="page-alerth" style="margin-top:0;">
-                    <i class="fa pg2 fa-fw fa-book"></i> Agregar Nueva Compra
+                    <i class="fa pg2 fa-fw fa-calculator"></i> Agregar Nueva Venta
                 </h4>
             </div>
-            <form id="agregaruser" action="formCompra" method="post" class="resetform form-horizontal">
+            <form id="agregaruser" action="formVenta" method="post" class="resetform form-horizontal">
                 <div class="modal-body">
                     <div class="form-group letra">
                         <label class="col-md-3 control-label"><strong class="colorred">*</strong>Nombre:</label>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="form-group numero">
-                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Total Compra:</label>
+                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Total Venta:</label>
                         <div class="col-md-8"> 
                             <div class="input-group">
                               <span class="input-group-addon">$</span>

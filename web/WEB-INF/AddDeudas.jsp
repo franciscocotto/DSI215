@@ -54,16 +54,24 @@
                         <li>
                           <a href="compras"><i class="fa fa-fw fa-book"></i> Compras                       
                           </a>
-                        </li>
-                        <li>
-                          <a href="servicios"><i class="fa fa-fw fa-bell"></i> Servicios Básicos</a>
-                        </li>
+                        </li>                       
                          <li class="active">
                           <a href="deudas"><i class="fa fa-fw fa-money"></i> Cuentas por Pagar
                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle  extended">                    
                                 <polygon style="border-color: white;" points="22,20 -5,40 0,0"></polygon>
                                 </svg>
                           </a>
+                        </li>
+                         <li>
+                          <a href="ventas"><i class="fa fa-fw fa-calculator"></i> Ventas
+                          </a>
+                        </li>
+                        <li>
+                          <a href="cobros"><i class="fa fa-fw fa-check"></i> Cuentas por Cobrar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="servicios"><i class="fa fa-fw fa-bell"></i> Servicios Básicos</a>
                         </li>
                          <li>
                           <a href="capital"><i class="fa fa-fw fa-bank"></i> Capital</a>

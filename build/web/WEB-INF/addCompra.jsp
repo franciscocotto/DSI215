@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="form-group letra">
-                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Descripc&oacute;n:</label>
+                        <label class="col-md-3 control-label"><strong class="colorred">*</strong>Descripci&oacute;n:</label>
                         <div class="col-md-8">
                             <input  class="form-control" row="10"  cols="30" name="descripcion" placeholder="Ingresar descripc&oacute;n" required="required" maxlength="60" minlength="3"/>  
                         </div>
