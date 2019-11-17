@@ -15,39 +15,18 @@
             <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasio/web/WEB-INF/AddMembresias.jsp</file>
         </group>
         <group>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/formDeuda.java</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/addVenta.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/formVenta.java</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/formCompra.java</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/readCompra.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/admin.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/readDeuda.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/AddCobros.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/user.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/LoginServlet.java</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/AddDeudas.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/modelo/addCompra.java</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/formEditVenta.java</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/modelo/addVenta.java</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/AddCompras.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/compras.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/deleteVenta.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/Admin.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/tableVentas.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/readVenta.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/deleteVenta.java</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/empleados.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/tableCobros.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/Clientes.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/addCapital.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/readCapital.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/deleteCapital.java</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/formEditaCapital.java</file>
             <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/AddVentas.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/membresias.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/cobros.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/readCobros.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/ventas.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/formCobro.java</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/AddEmpleados.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/AddMembresias.jsp</file>
-            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/membresias.java</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/tableCapital.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/AddCapitales.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/deleteCapital.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/modelo/addCapital.java</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/capital.java</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/capital.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/formCapital.java</file>
         </group>
     </open-files>
 </project-private>

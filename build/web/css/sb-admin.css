@@ -181,9 +181,20 @@ ul.alert-dropdown {
 /* Custom Colored Panels */
 
 .huge {
-    font-size: 40px;
+    font-size: 23px;
+    font-weight: bold;
 }
-
+fieldset{
+    padding: 5PX 10PX 0PX 5PX;
+    margin: 0;
+    border-radius: 5px;
+    TEXT-ALIGN: CENTER;
+    FONT-SIZE: 9PT;
+    FONT-WEIGHT: BOLD;
+    COLOR: #f7efef;
+    BACKGROUND: #0c2e35;
+    border: 1px solid #c6cece !important;
+}
 .panel-green {
     border-color: #87b308;
 }

@@ -20,6 +20,7 @@
     alfanumtildes();
     dateagepicker();
     dateagenowPicker();
+    dateagenowPickermodal();
     maskmoney();
     maskmoney2();
     amount();
@@ -62,7 +63,21 @@ var dateagenowPicker = function () {
     });
 };
 
-
+var dateagenowPickermodal = function () {
+    $('.dateagenowPickermodal').each(function () {
+        $(this).datetimepicker({
+            'maxDate': 'now',
+            'format': 'DD/MMM/YYYY',
+            'ignoreReadonly': true,
+            'allowInputToggle': true,
+            widgetPositioning: {
+              horizontal: "auto",
+              vertical: "auto"
+            }
+           
+        });
+    });
+};
 var today = new Date();
 var lastDate = new Date(today.getFullYear() + 1, 11, 31);
 var dateyearpicker = function () {

@@ -14,13 +14,13 @@
                     <div class="form-group letra">
                         <label class="col-md-3 control-label"><strong class="colorred">*</strong>Nombre:</label>
                         <div class="col-md-8">
-                            <input class="form-control" type="text" name="nombre" placeholder="Ingresar el Nombre de la Membresia" required="required" maxlength="60" minlength="3"/>    
+                            <input class="form-control" type="text" name="nombre" placeholder="Ingresar el Nombre de la Venta" required="required" maxlength="60" minlength="3"/>    
                         </div>
                     </div>
                     <div class="form-group letra">
                         <label class="col-md-3 control-label"><strong class="colorred">*</strong>Descripci&oacute;n:</label>
                         <div class="col-md-8">
-                            <input  class="form-control" row="10"  cols="30" name="descripcion" placeholder="Ingresar descripc&oacute;n" required="required" maxlength="60" minlength="3"/>  
+                            <input  class="form-control" row="10"  cols="30" name="descripcion" placeholder="Ingresar Descripc&oacute;n" required="required" maxlength="60" minlength="3"/>  
                         </div>
                     </div>               
                     <div class="form-group numero">

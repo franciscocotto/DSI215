@@ -14,7 +14,7 @@
                     <div class="form-group letra">
                         <label class="col-md-3 control-label"><strong class="colorred">*</strong>Nombre:</label>
                         <div class="col-md-8">
-                            <input class="form-control" type="text" name="nombre" placeholder="Ingresar el Nombre de la Membresia" required="required" maxlength="60" minlength="3"/>    
+                            <input class="form-control" type="text" name="nombre" placeholder="Ingresar el Nombre de la Compra" required="required" maxlength="60" minlength="3"/>    
                         </div>
                     </div>
                     <div class="form-group letra">
@@ -34,7 +34,7 @@
                         <div class="col-md-8"> 
                             <div class="input-group">
                               <span class="input-group-addon">$</span>
-                            <input class="form-control" id="money" type="text" name="precio" placeholder="Ingresar el precio" required="required"/>    
+                            <input class="form-control" id="money" type="text" name="precio" placeholder="Ingresar el valor total de compra" required="required"/>    
                             </div>
                         </div>
                     </div>                

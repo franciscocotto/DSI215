@@ -96,14 +96,14 @@
                     <div class="row">
                         <div class="col-lg-9">
                             <h1 class="page-header" style="margin-top:0;">
-                                <i class="fa pg fa-fw fa-bell"></i> Administraci&oacute;n de Servicios
+                                <i class="fa pg fa-fw fa-bell"></i> Administraci&oacute;n de Pago de Servicios
                             </h1>
                         </div>
 
                         <div class="col-lg-3">
-                          <button type="button" id="save-notify" name="regresar" class="col-lg-12 t5 btn-left btn btn-default" data-target="#agregarventa" data-toggle="modal">
+                          <button type="button" id="save-notify" name="regresar" class="col-lg-12 t5 btn-left btn btn-default" data-target="#agregarservicio" data-toggle="modal">
                                 <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
-                                Agregar Venta
+                                Agregar Pago de Servicios
                             </button>
                         </div>
                     </div>

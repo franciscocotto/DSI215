@@ -7,7 +7,7 @@
 <!--preparando conexion a base de datos en jsp-->
 <%conexion.ConexionJDBC con = new conexion.ConexionJDBC();
           Connection  cn2 = con.conectar();//se conecto a la base de datos
-            String sql2="select * from public.servicios ORDER BY id_servicio;";     
+            String sql2="select * from public.servicios  ORDER BY id_servicio;";     
             Statement st2;//preparando envio de consulta select
             
                 try {
@@ -19,7 +19,6 @@
             <th>N°</th>
             <th>Descripci&oacute;n</th>
             <th>ID_Servicio</th>
-            <th>Descripci&oacute;n</th>
             <th>Fecha</th>
             <th>Monto</th>
             <th>Ver</th>

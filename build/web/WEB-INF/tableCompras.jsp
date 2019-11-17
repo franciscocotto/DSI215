@@ -7,7 +7,7 @@
 <!--preparando conexion a base de datos en jsp-->
 <%conexion.ConexionJDBC con = new conexion.ConexionJDBC();
           Connection  cn2 = con.conectar();//se conecto a la base de datos
-            String sql2="select * from public.compras ORDER BY id_compras;";     
+            String sql2="SELECT nombre, id_compras, descripcion, cantidad, cast(precio as DECIMAL(18,2)), forma_de_pago FROM  public.compras ORDER BY id_compras;";     
             Statement st2;//preparando envio de consulta select
             
                 try {

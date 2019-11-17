@@ -26,7 +26,7 @@
                     <div class="form-group letra">
                         <label class="col-md-3 control-label"><strong class="colorred">*</strong>Nombre:</label>
                         <div class="col-md-8">
-                            <input class="form-control addnombre" type="text"  placeholder="Ingresar el Nombre de la Membresia"  maxlength="60" minlength="3" readonly/>    
+                            <input class="form-control addnombre" type="text"  placeholder="Ingresar el Nombre de la Deuda"  maxlength="60" minlength="3" readonly/>    
                         </div>
                     </div>
                     <div class="form-group letra">

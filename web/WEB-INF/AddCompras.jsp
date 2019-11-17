@@ -1,3 +1,7 @@
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
         <div id="wrapper">
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -87,33 +91,46 @@
             </nav>
             <div id="page-wrapper">
                 <div class="container-fluid">
+                    <%conexion.ConexionJDBC con = new conexion.ConexionJDBC();
+          Connection  cn2 = con.conectar();//se conecto a la base de datos
+           String sql3="Select count(id_compras), Sum(cantidad), cast(SUM(precio) as DECIMAL(18,2)), cast(SUM(total_deuda) as DECIMAL(18,2)) as sumprice from public.compras";
+           int sum = 0;
+           Statement st2;               
+                try {
+                   st2 = cn2.createStatement();
+                   ResultSet r=st2.executeQuery(sql3);
+                          if(r.next()){
+                               int c = r.getInt(1);
+                               sum = sum + c;
+                               String str = Double.toString(sum);
+                            //  String sum = r.getString("sumprice");//resultset %>   
                     <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-yellow">
                             <div class="panel-heading h145">
                                 <div class="row vertical">
-                                    <div class="col-xs-5">
-                                        <i class="fa fa-users fa-4x"></i>
+                                    <div class="col-xs-4">
+                                        <i class="fa fa-gift fa-4x"></i>
                                     </div>
-                                    <div class="col-xs-7 bleft">
-                                        <div class="huge">956</div>
-                                        <div>Total de Usuarios</div>
+                                    <div class="col-xs-8 bleft">
+                                        <div class="huge"><%out.println(r.getString(1));%></div>
+                                        <div>Total de Compras Realizadas</div>
                                     </div>
                                 </div>
                             </div>
                                                   </div>
                     </div>
 
- <div class="col-lg-3 col-md-6">
+                 <div class="col-lg-3 col-md-6">
                         <div class="panel panel-red">
                             <div class="panel-heading h145">
                                 <div class="row vertical">
-                                    <div class="col-xs-5">
-                                        <i class="fa fa-mobile fa-5x"></i>
+                                    <div class="col-xs-4">
+                                        <i class="fa fa-shopping-cart fa-5x"></i>
                                     </div>
-                                    <div class="col-xs-7 bleft">
-                                        <div class="huge">1205</div>
-                                        <div>Total de Sesiones</div>
+                                    <div class="col-xs-8 bleft">
+                                        <div class="huge"><%out.println(r.getString(2));%></div>
+                                        <div>Total de Items Comprados</div>
                                     </div>
                                 </div>
                             </div>
@@ -123,12 +140,12 @@
                         <div class="panel panel-green">
                             <div class="panel-heading h145">
                                 <div class="row vertical">
-                                    <div class="col-xs-5">
-                                        <i class="fa fa-home fa-4x"></i>
+                                    <div class="col-xs-4">
+                                        <i class="fa fa-money fa-4x"></i>
                                     </div>
-                                    <div class="col-xs-7 bleft">
-                                        <div class="huge">1501</div>
-                                        <div>Total de Visitas</div>
+                                    <div class="col-xs-8 bleft">
+                                        <div class="huge">$<%out.println(r.getString(3));%></div>
+                                        <div>Total de Dinero Gastado</div>
                                     </div>
                                 </div>
                             </div>
@@ -138,18 +155,22 @@
                         <div class="panel panel-primary">
                             <div class="panel-heading h145">
                                 <div class="row vertical">
-                                    <div class="col-xs-5">
+                                    <div class="col-xs-4">
                                         <i class="fa fa-clock-o fa-4x"></i>
                                     </div>
-                                    <div class="col-xs-7 bleft">
-                                        <div class="huge">1021</div>
-                                        <div>Minutos de Sesión</div>
+                                    <div class="col-xs-8 bleft">
+                                        <div class="huge"><%out.println(r.getString(4));%></div>
+                                        <div>Total de Dinero 
+                                            <br> por Pagar</div>
                                     </div>
                                 </div>
                             </div>
                                                   </div>
                     </div>
                 </div>
+                         <%} } catch (SQLException ex) {//captura error de existir alguno.
+                    System.out.println("error: "+ex );
+     }%>     
                     <div class="row">
                         <div class="col-lg-9">
                             <h1 class="page-header" style="margin-top:0;">
@@ -162,6 +183,11 @@
                                 <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
                                 Agregar Compra
                             </button>
+                        </div>
+                        <div class="col-lg-12">                      
+                           <fieldset>
+                            <p>Formas de Pago: 1 = Contado ; 2 = Cr&eacute;dito</p>
+                           </fieldset>
                         </div>
                     </div>
                     <div id="page-wrapper">

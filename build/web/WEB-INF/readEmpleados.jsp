@@ -27,13 +27,13 @@
                     <div class="form-group letra">
                         <label class="col-md-3 control-label"><strong class="colorred">*</strong>Nombre:</label>
                         <div class="col-md-8">
-                            <input class="form-control addnombre" type="text" name="nombre" placeholder="Ingresar el Nombre de la Membresia" required="required" maxlength="60" minlength="3"/>    
+                            <input class="form-control addnombre" type="text" name="nombre" placeholder="Ingresar el Nombre del Empleado" required="required" maxlength="60" minlength="3"/>    
                         </div>
                     </div>
                     <div class="form-group letra">
                         <label class="col-md-3 control-label"><strong class="colorred">*</strong>Apellido:</label>
                         <div class="col-md-8">
-                            <input  class="form-control addapellido" row="10"  cols="30" name="apellido" placeholder="Ingresar apellido" required="required" maxlength="60" minlength="3"/>  
+                            <input  class="form-control addapellido" row="10"  cols="30" name="apellido" placeholder="Ingresar Apellido del Empleado" required="required" maxlength="60" minlength="3"/>  
                         </div>
                     </div>
                    <div class="form-group letra">
