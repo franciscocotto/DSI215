@@ -55,21 +55,23 @@
                           <a href="empleados"><i class="fa fa-fw fa-user-md"></i> Empleados
                           </a>
                         </li>
-                        <li  class="active">
-                          <a href="compras"><i class="fa fa-fw fa-book"></i> Compras  
-                               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle  extended">                    
-                                <polygon style="border-color: white;" points="22,20 -5,40 0,0"></polygon>
-                                </svg>
+                        <li >
+                          <a href="compras"><i class="fa fa-fw fa-book"></i> Compras                              
                           </a>
                         </li>
                          <li>
                           <a href="deudas"><i class="fa fa-fw fa-money"></i> Cuentas por Pagar
                           </a>
                         </li>
+                                <%}  %>  
+
                           <li>
-                          <a href="ventas"><i class="fa fa-fw fa-calculator"></i> Ventas
+                          <a href="ventas"><i class="fa fa-fw fa-calculator"></i> Ventas                        
                           </a>
                         </li>
+                           <% 
+                         if( valor == 1){
+                        %> 
                         <li>
                           <a href="cobros"><i class="fa fa-fw fa-check"></i> Cuentas por Cobrar
                           </a>
@@ -80,8 +82,12 @@
                          <li>
                           <a href="capital"><i class="fa fa-fw fa-bank"></i> Capital</a>
                         </li>
-                         <li>
-                          <a href="balance"><i class="fa fa-fw fa-pie-chart"></i>  Balance</a>
+                         <li class="active">
+                          <a href="balance"><i class="fa fa-fw fa-pie-chart"></i>  Balance
+                           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle  extended">                    
+                                <polygon style="border-color: white;" points="22,20 -5,40 0,0"></polygon>
+                                </svg>
+                          </a>
                         </li>
                         <%}
                         %> 
@@ -91,30 +97,36 @@
             </nav>
             <div id="page-wrapper">
                 <div class="container-fluid">
-                    <%conexion.ConexionJDBC con = new conexion.ConexionJDBC();
+                        <% 
+                         if( valor == 1){
+                        %>  
+                    
+                    
+                                        <%conexion.ConexionJDBC con = new conexion.ConexionJDBC();
           Connection  cn2 = con.conectar();//se conecto a la base de datos
-           String sql3="Select count(id_compras), Sum(cantidad), cast(SUM(precio) as DECIMAL(18,2)), cast(SUM(total_deuda) as DECIMAL(18,2)) as sumprice from public.compras";
+           String sql3="Select count(id_ventas), Sum(cantidad), cast(SUM(precio) as DECIMAL(18,2)),  cast(SUM(total_pago) as DECIMAL(18,2)) as sumprice from public.ventas";
            int sum = 0;
            Statement st2;               
                 try {
                    st2 = cn2.createStatement();
                    ResultSet r=st2.executeQuery(sql3);
-                          if(r.next()){
-                               int c = r.getInt(1);
-                               sum = sum + c;
-                               String str = Double.toString(sum);
-                            //  String sum = r.getString("sumprice");//resultset %>   
+                       if(r.next()){
+                          
+                            //  String sum = r.getString("sumprice");//resultset   
+                            %>  
+                         
+                            
                     <div class="row">
                     <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-yellow">
+                        <div class="panel panel-success">
                             <div class="panel-heading h145">
                                 <div class="row vertical">
                                     <div class="col-xs-4">
-                                        <i class="fa fa-gift fa-4x"></i>
+                                        <i class="fa fa-money fa-4x"></i>
                                     </div>
                                     <div class="col-xs-8 bleft">
-                                        <div class="huge"><%out.println(r.getString(1)!= null ? r.getString(1) : '0');%></div>
-                                        <div>Total de Compras Realizadas</div>
+                                        <div class="huge">$<%out.println(r.getString(2)!= null ? r.getString(2) : '0');%></div>
+                                        <div>Total Cuentas por Cobrar</div>
                                     </div>
                                 </div>
                             </div>
@@ -122,22 +134,22 @@
                     </div>
 
                  <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-red">
+                        <div class="panel panel-warning">
                             <div class="panel-heading h145">
                                 <div class="row vertical">
                                     <div class="col-xs-4">
-                                        <i class="fa fa-shopping-cart fa-5x"></i>
+                                        <i class="fa fa-money fa-5x"></i>
                                     </div>
                                     <div class="col-xs-8 bleft">
-                                        <div class="huge"><%out.println(r.getString(2)!= null ? r.getString(2) : '0');%></div>
-                                        <div>Total de Items Comprados</div>
+                                        <div class="huge">$<%out.println(r.getString(2)!= null ? r.getString(2) : '0');%></div>
+                                       <div>Total Cuentas por Pagar</div>
                                     </div>
                                 </div>
                             </div>
                                                   </div>
                     </div>
                      <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-green">
+                        <div class="panel panel-danger">
                             <div class="panel-heading h145">
                                 <div class="row vertical">
                                     <div class="col-xs-4">
@@ -145,49 +157,40 @@
                                     </div>
                                     <div class="col-xs-8 bleft">
                                         <div class="huge">$<%out.println(r.getString(3)!= null ? r.getString(3) : '0');%></div>
-                                        <div>Total de Dinero Gastado</div>
+                                        <div>Total de Ingresos Membresias</div>
                                     </div>
                                 </div>
                             </div>
                                                   </div>
                     </div>
                      <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-primary">
+                        <div class="panel panel-info">
                             <div class="panel-heading h145">
                                 <div class="row vertical">
                                     <div class="col-xs-4">
-                                        <i class="fa fa-clock-o fa-4x"></i>
+                                        <i class="fa fa-money fa-4x"></i>
                                     </div>
                                     <div class="col-xs-8 bleft">
-                                        <div class="huge"><%out.println(r.getString(4)!= null ? r.getString(4) : '0');%></div>
+                                        <div class="huge">$<%out.println(r.getString(4)!= null ? r.getString(4) : '0') ;%></div>
                                         <div>Total de Dinero 
-                                            <br> por Pagar</div>
+                                            <br> de Capital</div>
                                     </div>
                                 </div>
                             </div>
                                                   </div>
                     </div>
                 </div>
-                         <%} } catch (SQLException ex) {//captura error de existir alguno.
+                         <%}} catch (SQLException ex) {//captura error de existir alguno.
                     System.out.println("error: "+ex );
-     }%>     
+     }%>  
+     
+      <%}
+                        %> 
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-12">
                             <h1 class="page-header" style="margin-top:0;">
-                                <i class="fa pg fa-fw fa-book"></i> Administraci&oacute;n de Compras
+                                <i class="fa pg fa-fw fa-pie-chart"></i> Balances
                             </h1>
-                        </div>
-
-                        <div class="col-lg-3">
-                          <button type="button" id="save-notify" name="regresar" class="col-lg-12 t5 btn-left btn btn-default" data-target="#agregarcompra" data-toggle="modal">
-                                <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
-                                Agregar Compra
-                            </button>
-                        </div>
-                        <div class="col-lg-12">                      
-                           <fieldset>
-                            <p>Formas de Pago: 1 = Contado ; 2 = Cr&eacute;dito</p>
-                           </fieldset>
                         </div>
                     </div>
                     <div id="page-wrapper">
@@ -195,7 +198,68 @@
 
                             <div class="row gray-row">
                                 <article class="center2" >
-                                     <jsp:include page="tableCompras.jsp" /> 
+                                    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#example2-tab1" aria-controls="example2-tab1" role="tab" data-toggle="tab">Balance de Comprobaci&oacute;n</a></li>
+        <li role="presentation"><a href="#example2-tab2" aria-controls="example2-tab2" role="tab" data-toggle="tab">Estado de Resultados</a></li>
+        <li role="presentation"><a href="#example2-tab2" aria-controls="example2-tab2" role="tab" data-toggle="tab">Estado de Capital</a></li>
+        <li role="presentation"><a href="#example2-tab2" aria-controls="example2-tab2" role="tab" data-toggle="tab">Balance General</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="example2-tab1">
+            <hr>
+            <table id="tab1" class="table2 tabler2 table-striped table-bordered table-condensed" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>CUENTAS</th>
+                        <th>DEBE</th>
+                        <th>HABER</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td align="right">TOTAL</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                </tbody>
+            </table>
+             <hr>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="example2-tab2">
+            <hr>
+            <table id="tab2" class="table2 tabler2 table-striped table-bordered table-condensed" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>CUENTAS</th>
+                        <th>DEBE</th>
+                        <th>HABER</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td align="right">TOTAL</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </div>
+        
+    </div>
                                 </article>
                             </div>
                         </div>
@@ -203,11 +267,7 @@
                     <jsp:include page="footer.jsp" />
                 </div>
             </div>
-        </div>
-<!-- Modals -->
- <jsp:include page="deleteCompra.jsp" />
- <jsp:include page="addCompra.jsp" />
- <jsp:include page="readCompra.jsp" />
+        </div>  
     </body>
 
 </html>

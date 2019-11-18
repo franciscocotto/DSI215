@@ -109,11 +109,12 @@
                 try {
                    st2 = cn2.createStatement();
                    ResultSet r=st2.executeQuery(sql3);
-                          if(r.next()){
-                               int c = r.getInt(1);
-                               sum = sum + c;
-                               String str = Double.toString(sum);
-                            //  String sum = r.getString("sumprice");//resultset %>   
+                       if(r.next()){
+                          
+                            //  String sum = r.getString("sumprice");//resultset   
+                            %>  
+                         
+                            
                     <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-success">
@@ -123,7 +124,7 @@
                                         <i class="fa fa-gift fa-4x"></i>
                                     </div>
                                     <div class="col-xs-8 bleft">
-                                        <div class="huge"><%out.println(r.getString(1));%></div>
+                                        <div class="huge"><%out.println(r.getString(2)!= null ? r.getString(2) : '0');%></div>
                                         <div>Total de Compras Realizadas</div>
                                     </div>
                                 </div>
@@ -139,7 +140,7 @@
                                         <i class="fa fa-shopping-cart fa-5x"></i>
                                     </div>
                                     <div class="col-xs-8 bleft">
-                                        <div class="huge"><%out.println(r.getString(2));%></div>
+                                        <div class="huge"><%out.println(r.getString(2)!= null ? r.getString(2) : '0');%></div>
                                         <div>Total de Items Comprados</div>
                                     </div>
                                 </div>
@@ -154,7 +155,7 @@
                                         <i class="fa fa-money fa-4x"></i>
                                     </div>
                                     <div class="col-xs-8 bleft">
-                                        <div class="huge">$<%out.println(r.getString(3));%></div>
+                                        <div class="huge">$<%out.println(r.getString(3)!= null ? r.getString(3) : '0');%></div>
                                         <div>Total de Dinero Cobrado</div>
                                     </div>
                                 </div>
@@ -169,7 +170,7 @@
                                         <i class="fa fa-clock-o fa-4x"></i>
                                     </div>
                                     <div class="col-xs-8 bleft">
-                                        <div class="huge">$<%out.println(r.getString(4));%></div>
+                                        <div class="huge">$<%out.println(r.getString(4)!= null ? r.getString(4) : '0') ;%></div>
                                         <div>Total de Dinero 
                                             <br> por Cobrar</div>
                                     </div>
@@ -178,7 +179,7 @@
                                                   </div>
                     </div>
                 </div>
-                         <%} } catch (SQLException ex) {//captura error de existir alguno.
+                         <%}} catch (SQLException ex) {//captura error de existir alguno.
                     System.out.println("error: "+ex );
      }%>  
      

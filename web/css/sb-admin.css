@@ -10,7 +10,7 @@
 @import url("jquery.dataTables.css");
 @import url("bootstrap-datetimepicker.css");
 @import url("../font-awesome/css/font-awesome.min.css");
-
+@import url("tabs.css");
 
 body {
     margin-top: 100px;
