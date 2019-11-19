@@ -202,8 +202,8 @@
     <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="#example2-tab1" aria-controls="example2-tab1" role="tab" data-toggle="tab">Balance de Comprobaci&oacute;n</a></li>
         <li role="presentation"><a href="#example2-tab2" aria-controls="example2-tab2" role="tab" data-toggle="tab">Estado de Resultados</a></li>
-        <li role="presentation"><a href="#example2-tab2" aria-controls="example2-tab2" role="tab" data-toggle="tab">Estado de Capital</a></li>
-        <li role="presentation"><a href="#example2-tab2" aria-controls="example2-tab2" role="tab" data-toggle="tab">Balance General</a></li>
+        <li role="presentation"><a href="#example2-tab3" aria-controls="example2-tab3" role="tab" data-toggle="tab">Estado de Capital</a></li>
+        <li role="presentation"><a href="#example2-tab4" aria-controls="example2-tab4" role="tab" data-toggle="tab">Balance General</a></li>
     </ul>
 
     <!-- Tab panes -->
@@ -219,13 +219,55 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+
+                     <tr>
+                        <td>Ventas</td>
                         <td></td>
+                        <td></td>   
+                    </tr>
+                             
+                     <tr>
+                        <td>Cuentas por Cobrar</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>                    
+                     <tr>
+                        <td>Servicios B&aacute;sicos</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                     <tr>
+                        <td>Compras</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                     <tr>
+                        <td>Cuentas por Pagar</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                     <tr>
+                        <td>Capital</td>
                         <td></td>
                         <td></td>   
                     </tr>
                     <tr>
-                        <td align="right">TOTAL</td>
+                        <td>IVA Credito Fiscal</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                      <tr>
+                        <td>IVA Debito Fiscal</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                     <tr>
+                        <td>Salarios</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td align="right"><strong>TOTAL</strong></td>
                         <td></td>
                         <td></td>   
                     </tr>
@@ -245,14 +287,105 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <td>Ventas</td>
                         <td></td>
+                        <td></td>   
+                    </tr>
+                     <tr>
+                        <td>Salarios</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                     <tr>
+                        <td>Servicios B&aacute;sicos</td>
                         <td></td>
                         <td></td>   
                     </tr>
                     <tr>
-                        <td align="right">TOTAL</td>
+                        <td align="right"><strong>TOTAL</strong></td>
                         <td></td>
                         <td></td>   
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </div>
+          <div role="tabpanel" class="tab-pane fade" id="example2-tab3">
+            <hr>
+            <table id="tab3" class="table2 tabler2 table-striped table-bordered table-condensed" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>CUENTAS</th>
+                        <th>DEBE</th>
+                        <th>HABER</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Capital</td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td align="right"><strong>TOTAL</strong></td>
+                        <td></td>
+                        <td></td>   
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </div>
+          <div role="tabpanel" class="tab-pane fade" id="example2-tab4">
+            <hr>
+            <table id="tab4" class="table2 tabler2 table-striped table-bordered table-condensed" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th colspan="2" style="font-size: 10pt"><strong>ACTIVOS</strong></th>
+                        <th colspan="2" style="font-size: 10pt"><strong>PASIVOS</strong></th>
+                    </tr>
+                    <tr>
+                        <th>CUENTAS</th>
+                        <th>DEBE</th>
+                        <th>CUENTAS</th>
+                        <th>HABER</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ventas</td>
+                        <td></td>
+                        <td>Cuentas por Pagar</td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td>Cuentas por Cobrar</td>
+                        <td></td>
+                        <td>IVA Debito Fiscal</td>
+                        <td></td>   
+                    </tr>
+                      <tr>
+                        <td>IVA Credito Fiscal</td>
+                        <td></td>
+                        <td>Salarios</td>
+                        <td></td>   
+                    </tr>
+                      <tr>
+                        <td>Compras</td>
+                        <td></td>
+                        <td style="background: #28a1f6; color:white"><strong>PATRIMONIO</strong></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td>Compras</td>
+                        <td></td>
+                        <td>Capital</td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td align="right"><strong>TOTAL</strong></td>
+                        <td></td>
+                       <td align="right"><strong>TOTAL</strong></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>

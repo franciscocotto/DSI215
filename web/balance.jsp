@@ -34,7 +34,8 @@
       searching: false,
        lengthChange: false,
       info: false,
-      paging: false
+      paging: false,
+      order: false
    });
 
    $('#tab2').DataTable({
@@ -42,7 +43,8 @@
       searching: false,
        lengthChange: false,
       info: false,
-      paging: false
+      paging: false,
+      order: false
    });
    
    $('#tab3').DataTable({
@@ -50,7 +52,8 @@
       searching: false,
       lengthChange: false,
       info: false,
-      paging: false
+      paging: false,
+      order: false
    });
    
    $('#tab4').DataTable({
@@ -58,7 +61,8 @@
       searching: false,
       lengthChange: false,
       info: false,
-      paging: false
+      paging: false,
+      order: false
    });
    $('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
       $($.fn.dataTable.tables(true)).DataTable()

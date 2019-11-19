@@ -159,7 +159,7 @@
                                         <i class="fa fa-clock-o fa-4x"></i>
                                     </div>
                                     <div class="col-xs-8 bleft">
-                                        <div class="huge"><%out.println(r.getString(4)!= null ? r.getString(4) : '0');%></div>
+                                        <div class="huge">$<%out.println(r.getString(4)!= null ? r.getString(4) : '0');%></div>
                                         <div>Total de Dinero 
                                             <br> por Pagar</div>
                                     </div>
