@@ -210,6 +210,19 @@
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="example2-tab1">
             <hr>
+             <%conexion.ConexionJDBC con = new conexion.ConexionJDBC();
+          Connection  cn2 = con.conectar();//se conecto a la base de datos
+           String sql3="Select cast(ventas as DECIMAL(18,2)),cast(cuentas_cobrar as DECIMAL(18,2)), cast(servicios_basicos as DECIMAL(18,2)), cast(compras as DECIMAL(18,2)), cast(cuentas_pagar as DECIMAL(18,2)), cast(capital as DECIMAL(18,2)), cast(iva_credito as DECIMAL(18,2)),cast(iva_debito as DECIMAL(18,2)),cast(salarios as DECIMAL(18,2)) from public.balances";
+           int sum = 0;
+           Statement st2;               
+                try {
+                   st2 = cn2.createStatement();
+                   ResultSet r=st2.executeQuery(sql3);
+                       if(r.next()){
+                          
+                            //  String sum = r.getString("sumprice");//resultset   
+                            %>  
+            
             <table id="tab1" class="table2 tabler2 table-striped table-bordered table-condensed" cellspacing="0" width="100%">
                 <thead>
                     <tr>
@@ -222,48 +235,48 @@
 
                      <tr>
                         <td>Ventas</td>
-                        <td></td>
+                        <td>$<%out.println(r.getString(1)!= null ? r.getString(1) : '0');%></td>
                         <td></td>   
                     </tr>
                              
                      <tr>
                         <td>Cuentas por Cobrar</td>
-                        <td></td>
+                        <td>$<%out.println(r.getString(2)!= null ? r.getString(2) : '0');%></td>
                         <td></td>   
                     </tr>                    
                      <tr>
                         <td>Servicios B&aacute;sicos</td>
-                        <td></td>
+                        <td>$<%out.println(r.getString(3)!= null ? r.getString(3) : '0');%></td>
                         <td></td>   
                     </tr>
                      <tr>
                         <td>Compras</td>
                         <td></td>
-                        <td></td>   
+                        <td>$<%out.println(r.getString(4)!= null ? r.getString(4) : '0');%></td>   
                     </tr>
                      <tr>
                         <td>Cuentas por Pagar</td>
                         <td></td>
-                        <td></td>   
+                        <td>$<%out.println(r.getString(5)!= null ? r.getString(5) : '0');%></td>   
                     </tr>
                      <tr>
                         <td>Capital</td>
                         <td></td>
-                        <td></td>   
+                        <td>$<%out.println(r.getString(6)!= null ? r.getString(6) : '0');%></td>   
                     </tr>
                     <tr>
                         <td>IVA Credito Fiscal</td>
-                        <td></td>
+                        <td>$<%out.println(r.getString(7)!= null ? r.getString(7) : '0');%></td>
                         <td></td>   
                     </tr>
                       <tr>
                         <td>IVA Debito Fiscal</td>
                         <td></td>
-                        <td></td>   
+                        <td>$<%out.println(r.getString(8)!= null ? r.getString(8) : '0');%></td>   
                     </tr>
                      <tr>
                         <td>Salarios</td>
-                        <td></td>
+                        <td>$<%out.println(r.getString(9)!= null ? r.getString(9) : '0');%></td>
                         <td></td>   
                     </tr>
                     <tr>
@@ -273,6 +286,11 @@
                     </tr>
                 </tbody>
             </table>
+                             <%}} catch (SQLException ex) {//captura error de existir alguno.
+                    System.out.println("error: "+ex );
+     }%>  
+     
+
              <hr>
         </div>
         <div role="tabpanel" class="tab-pane fade" id="example2-tab2">

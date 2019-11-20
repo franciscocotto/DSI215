@@ -11,8 +11,12 @@
             <file>file:/C:/Users/Moi/Documents/NetBeansProjects/Proyecto%20en%20Netbeans%208.1/gimnasioSIC/web/WEB-INF/tableServicios.jsp</file>
         </group>
         <group>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/modelo/addVenta.java</file>
             <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/AddCompras.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/servlets/formCompra.java</file>
             <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/balance.jsp</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/modelo/addCompra.java</file>
+            <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/src/java/modelo/addServicio.java</file>
             <file>file:/E:/CICLO%206%20-%20SISTEMAS/SISTEMAS%20CONTABLES/PROYECTO/web/WEB-INF/AddBalance.jsp</file>
         </group>
     </open-files>
