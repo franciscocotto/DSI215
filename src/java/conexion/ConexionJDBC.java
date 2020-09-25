@@ -12,7 +12,7 @@ public class ConexionJDBC {
     //variables de conexion
     Connection conexion = null;
     //nombre base de datos
-    String db= "gimnasio1";
+    String db= "vision";
     String host = "localhost";
     //puerto por defecto
     String port = "5432";
